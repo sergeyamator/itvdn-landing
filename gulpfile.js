@@ -6,9 +6,6 @@ const spritesmith = require('gulp.spritesmith');
 const rimraf = require('rimraf');
 const rename = require('gulp-rename');
 
-
-
-
 /* -------- Server  -------- */
 gulp.task('server', function() {
   browserSync.init({
@@ -83,3 +80,4 @@ gulp.task('default', gulp.series(
   gulp.parallel('watch', 'server')
   )
 );
+

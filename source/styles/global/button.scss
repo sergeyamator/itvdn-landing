@@ -1,0 +1,28 @@
+.button {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 10px 22px 7px;
+  text-decoration: none;
+  color: #fff;
+
+  &--red {
+    background: #de2b24;
+    transition: 0.3s;
+
+    &:hover {
+      background: lighten(#de2b24, 7%);
+    }
+  }
+
+  &--yellow {
+    background: #f8cd53;
+
+    &:hover {
+      background: lighten(#f8cd53, 7%);
+    }
+  }
+
+  &--text-uppercase {
+    text-transform: uppercase;
+  }
+}
