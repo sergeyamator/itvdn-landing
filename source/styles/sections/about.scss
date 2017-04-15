@@ -1,0 +1,34 @@
+.about {
+  padding: 99px 0 105px 0;
+  text-align: center;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0 50px;
+  }
+
+  &__item {
+    width: 25%;
+  }
+
+  &__header {
+    margin: 0 0 12px 0;
+    font-size: 1.375rem;
+    font-family: $ff-main-bold;
+    color: #424242;
+  }
+
+  &__description {
+    margin-top: 0;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #5c5c5c;
+  }
+
+  &__text {
+
+  }
+}
