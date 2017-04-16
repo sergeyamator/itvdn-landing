@@ -1,0 +1,91 @@
+.approach {
+  padding: 86px 0 94px;
+  background-color: #f3f3f3;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    counter-reset: count;
+  }
+
+  &__item {
+    margin-bottom: 40px;
+    border-radius: 5px;
+    box-shadow: -1px -1px 10px 1px rgba(214, 214, 214, 1);
+    color: #424242;
+    background: #fff;
+
+    &:nth-child(2n) {
+      display: flex;
+      flex-direction: row-reverse;
+      text-align: right;
+
+      .approach__text {
+        padding: 70px 90px;
+      }
+
+      .approach__step {
+        right: auto;
+        left: -52px;
+      }
+    }
+  }
+
+  &__image {
+    position: relative;
+    max-width: 340px;
+    max-height: 236px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__text {
+    display: inline-block;
+    vertical-align: top;
+    width: 64%;
+    padding: 70px 70px 55px 90px;
+    font-size: 0.875rem;
+  }
+
+  &__step {
+    @include centerer-y();
+
+    right: -58px;
+    width: 103px;
+    height: 103px;
+    padding-top: 10px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    text-align: center;
+    font-size: 1.25rem;
+    background-color: #de2b24;
+    color: #fff;
+
+    &:before {
+      content: counter(count);
+      counter-increment: count;
+      display: block;
+      font-family: $ff-steps;
+      font-size: 3rem;
+      line-height: 1;
+      color: #fff;
+    }
+  }
+
+  &__title {
+    margin-bottom: 6px;
+    font-size: 1.125rem;
+    font-family: $ff-main-bold;
+  }
+
+  &__description {
+    margin: 0;
+    line-height: 1.5;
+  }
+}
