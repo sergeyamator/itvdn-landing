@@ -1,0 +1,53 @@
+.work {
+  padding: 110px 0;
+  background-color: #de2b24;
+  color: #fff;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .title--with-bottom-line {
+    &:after {
+      background: #fff;
+    }
+  }
+
+  &__item {
+    width: 256px;
+    height: 255px;
+    font-weight: bold;
+    color: #ffffff;
+    background: #f35e59;
+
+    &--name {
+      position: relative;
+      padding: 130px 40px 75px 40px;
+      text-align: center;
+
+      &:before {
+        @include sprite($work-item);
+        @include centerer-x();
+
+        content: '';
+        top: 74px;
+      }
+    }
+  }
+
+  &__name {
+    font-size: 1.625rem;
+  }
+
+  &__picture {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__description {
+    font-size: 1rem;
+  }
+}
