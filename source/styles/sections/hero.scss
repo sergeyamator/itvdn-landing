@@ -1,5 +1,5 @@
 .hero {
-  min-height: 59px;
+  min-height: 590px;
   padding: 174px 0;
   text-align: center;
   color: #fff;
@@ -17,7 +17,13 @@
     font-family: $ff-main-light;
   }
 
-  .button--text-uppercase {
+
+  @media (max-width: 599px) {
+    padding: 100px 20px;
+    min-height: inherit;
+  }
+
+    .button--text-uppercase {
     padding: 21px 41px;
     border-radius: 8px;
     font-size: 1.5rem;

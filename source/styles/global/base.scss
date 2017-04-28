@@ -6,6 +6,10 @@ body {
 
 html {
   box-sizing: border-box;
+
+  @media (max-width: 600px) {
+    font-size: 14px;
+  }
 }
 
 *, *:before, *:after {
