@@ -1,7 +1,7 @@
 (function() {
-    // Add event listeners
     var openFormButton = document.querySelector('.arrow-down');
     var form = document.querySelector('.form');
+    var nav = document.querySelector('.nav');
 
     if (openFormButton) {
         openFormButton.addEventListener('click', function(e) {
@@ -20,6 +20,19 @@
             }
 
         })
+    }
+
+    if (nav) {
+        nav.addEventListener('click', function(e) {
+            var target = e.target;
+
+            if (target.tagName.toLowerCase() !== 'a') {
+                return;
+            }
+
+            e.preventDefault();
+            ITVDN.navigation.toggleToActiveLink(target);
+        });
     }
 
 }());
